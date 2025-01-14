@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99EC3F2F-3893-4911-97E1-489A4FA28980}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DeweyDecimalApplication</RootNamespace>
+    <AssemblyName>DeweyDecimalApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ConfettiAnimation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\ConfettiPiece.cs" />
+    <Compile Include="Classes\DeweyMultiLevelData.cs" />
+    <Compile Include="Classes\DeweyNode.cs" />
+    <Compile Include="Classes\DeweyNumbers.cs" />
+    <Compile Include="Classes\HalloweenAnimation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\HalloweenObject.cs" />
+    <Compile Include="Classes\LineDrawing.cs" />
+    <Compile Include="Classes\RedBlackTree.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomDialogForm.Designer.cs">
+      <DependentUpon>CustomDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindingCallNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindingCallNumbers.Designer.cs">
+      <DependentUpon>FindingCallNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameOverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameOverForm.Designer.cs">
+      <DependentUpon>GameOverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HalloweenCustomDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HalloweenCustomDialogForm.Designer.cs">
+      <DependentUpon>HalloweenCustomDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IdentifyingAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IdentifyingAreas.Designer.cs">
+      <DependentUpon>IdentifyingAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReplacingBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReplacingBooks.Designer.cs">
+      <DependentUpon>ReplacingBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\FindingCallNumbersUserC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FindingCallNumbersUserC.Designer.cs">
+      <DependentUpon>FindingCallNumbersUserC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HomeUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HomeUc.Designer.cs">
+      <DependentUpon>HomeUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\IdentifyingAreasUserC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\IdentifyingAreasUserC.Designer.cs">
+      <DependentUpon>IdentifyingAreasUserC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReplacingBooksUserC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReplacingBooksUserC.Designer.cs">
+      <DependentUpon>ReplacingBooksUserC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDialogForm.resx">
+      <DependentUpon>CustomDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindingCallNumbers.resx">
+      <DependentUpon>FindingCallNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameOverForm.resx">
+      <DependentUpon>GameOverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HalloweenCustomDialogForm.resx">
+      <DependentUpon>HalloweenCustomDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IdentifyingAreas.resx">
+      <DependentUpon>IdentifyingAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReplacingBooks.resx">
+      <DependentUpon>ReplacingBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\FindingCallNumbersUserC.resx">
+      <DependentUpon>FindingCallNumbersUserC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomeUc.resx">
+      <DependentUpon>HomeUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\IdentifyingAreasUserC.resx">
+      <DependentUpon>IdentifyingAreasUserC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReplacingBooksUserC.resx">
+      <DependentUpon>ReplacingBooksUserC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReplaceIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeweyDecimalPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookshelf-in-library-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenBook1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenBook2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenBook3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenBook4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GenBook5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BronzeBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SilverBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlatinumBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalloweenThemeBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalloweenBadgeDisplay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BloodFalling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloodsplatter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-halloween.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halloween.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transform.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halloweenThemedBronzeBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalloweenThemedAchievementBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalloweenthemedSilverBadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HalloweenBackImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovingPumpkin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\DeweyDecimalData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
